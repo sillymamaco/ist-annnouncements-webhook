@@ -62,7 +62,6 @@ def main():
         for url in RSS_URLS:
             try:
                 # Extract course name from URL for better Discord titles
-                # E.g., /disciplinas/IAED/ -> IAED
                 parts = url.split('/')
                 course_name = parts[parts.index('disciplinas') + 1] if 'disciplinas' in parts else "IST News"
                 
@@ -74,7 +73,7 @@ def main():
                         post_to_discord(entry, course_name)
                         add_seen_guid(entry.guid)
                         seen_guids.add(entry.guid)
-                        time.sleep(2) # Avoid Discord rate limits
+                        time.sleep(2) 
                         
             except Exception as e:
                 print(f"Error parsing {url}: {e}")

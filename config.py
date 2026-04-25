@@ -9,8 +9,6 @@ IST_BLUE = 3447003
 # Ensure the directory exists
 os.makedirs(os.path.dirname(DB_FILE), exist_ok=True)
 
-# ... (previous config)
-
 # Mapping of course identifier (from URL) to Discord Role ID
 COURSE_ROLES = {
     "CDI93610": "1497620447724834856",

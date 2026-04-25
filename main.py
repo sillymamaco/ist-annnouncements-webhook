@@ -13,7 +13,6 @@ def get_feed_urls():
         return [line.strip() for line in f if line.strip() and not line.startswith("#")]
 
 def extract_course_name(url):
-    # Regex to find the course code (e.g., IAED or CDI93610)
     match = re.search(r'/disciplinas/([^/]+)/', url)
     return match.group(1) if match else "IST News"
 
