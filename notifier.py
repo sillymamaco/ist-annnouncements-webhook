@@ -7,7 +7,7 @@ def post_to_discord(entry, course_name):
     role_id = COURSE_ROLES.get(course_name)
     content = f"<@&{role_id}>" if role_id else ""
 
-    message_text = f"🚨 **Acordem, dropou anúncio de {course_name}** {ping}:"
+    message_text = f"🚨 **Acordem, dropou anúncio de {course_name}** {content}:"
 
     payload = {
         "content": message_text,

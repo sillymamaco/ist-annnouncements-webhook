@@ -2,7 +2,7 @@ import os
 
 WEBHOOK_URL = "https://discord.com/api/webhooks/1497240161690325124/hHnw9S_kMNQSaLVttrdOcecNbMyAIuIhuro7yEXpVh3g2C0ilQhX7rcUZlx5T8rXhHcH"
 DB_FILE = "/opt/istbot/ist-bot/seen_guids.txt"
-FEEDS_FILE = "feeds.txt"
+FEEDS_FILE = "/opt/istbot/ist-bot/feeds.txt"
 FETCH_INTERVAL = 300  # 5 minutes
 IST_BLUE = 3447003
 
