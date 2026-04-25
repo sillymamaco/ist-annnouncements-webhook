@@ -1,0 +1,13 @@
+# Main IST News
+https://fenix.tecnico.ulisboa.pt/noticias/rss
+
+# 2nd Semester Courses
+https://fenix.tecnico.ulisboa.pt/disciplinas/CDI93610/2025-2026/2-semestre/rss/announcement
+https://fenix.tecnico.ulisboa.pt/disciplinas/EMD3610/2025-2026/2-semestre/rss/announcement
+https://fenix.tecnico.ulisboa.pt/disciplinas/IAC23610/2025-2026/2-semestre/rss/announcement
+https://fenix.tecnico.ulisboa.pt/disciplinas/IAED23610/2025-2026/2-semestre/rss/announcement
+https://fenix.tecnico.ulisboa.pt/disciplinas/Fis33610/2025-2026/2-semestre/rss/announcement
+https://fenix.tecnico.ulisboa.pt/disciplinas/MO10/2025-2026/2-semestre/rss/announcement
+https://fenix.tecnico.ulisboa.pt/disciplinas/CDI53610/2025-2026/2-semestre/rss/announcement
+https://fenix.tecnico.ulisboa.pt/disciplinas/Alge10/2025-2026/2-semestre/rss/announcement
+https://fenix.tecnico.ulisboa.pt/disciplinas/PEstatisticad103610/2025-2026/2-semestre
