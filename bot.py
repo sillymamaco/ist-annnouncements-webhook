@@ -19,7 +19,7 @@ RSS_URLS = [
 ]
 
 WEBHOOK_URL = "https://discord.com/api/webhooks/1497240161690325124/hHnw9S_kMNQSaLVttrdOcecNbMyAIuIhuro7yEXpVh3g2C0ilQhX7rcUZlx5T8rXhHcH"
-DB_FILE = "/opt/istbot/seen_guids.txt"
+DB_FILE = "/opt/istbot/ist-bot/seen_guids.txt"
 
 # ==========================================
 # LOGIC
