@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+config.py
+*.log
+bot.logi
+seen_guids.txt
+feeds.txt
