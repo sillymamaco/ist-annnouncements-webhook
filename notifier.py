@@ -1,12 +1,14 @@
 import requests
 import time
-from config import WEBHOOK_URL, IST_BLUE, COURSE_ROLES
+from config import COURSES, LEIC_WEBHOOK, IST_BLUE
 
 def post_to_discord(entry, course_name):
-    # Retrieve the role ID from config; default to no ping if not found
-    role_id = COURSE_ROLES.get(course_name)
+    course_data = COURSES.get(course_name, {"role": None, "webhooks": [LEIC_WEBHOOK]})
+    
+    webhooks = course_data.get("webhooks", [LEIC_WEBHOOK])
+    role_id = course_data.get("role")
+    
     content = f"<@&{role_id}>" if role_id else ""
-
     message_text = f"🚨 **Acordem, dropou anúncio de {course_name}** {content}:"
 
     payload = {
@@ -18,10 +20,12 @@ def post_to_discord(entry, course_name):
             "color": IST_BLUE,
             "footer": {"text": "Torradeira da Cave | CMTV"}
         }]
-    }    
-    try:
-        response = requests.post(WEBHOOK_URL, json=payload)
-        response.raise_for_status()
-        time.sleep(1) 
-    except Exception as e:
-        print(f"Error posting to Discord: {e}")
+    }
+    
+    for url in webhooks:
+        try:
+            response = requests.post(url, json=payload)
+            response.raise_for_status()
+            time.sleep(0.5) 
+        except Exception as e:
+            print(f"Error posting to {url}: {e}")
